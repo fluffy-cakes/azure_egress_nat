@@ -8,7 +8,7 @@ First, I must give kudos to the following guide which helped my colleague and I 
 
 Since you can view the code in the repo I am not going to go through step by step what is needed. I will, however, make some important notes on things we learnt during our process.
 
-*NOTE: Please see the shell script in the hub module for the configuration of Ubuntu for IpTables and internal routing to help grasp the following.*
+*NOTE: Please see the shell script in the hub module for the configuration of Ubuntu for IpTables and internal routing to help grasp the following:* [Ubuntu Shell script](ubuntu_hub/routing.sh)
 
 ## Public NIC should be  ethernet ZERO (`eth0`)
 
