@@ -14,11 +14,9 @@ Since you can view the code in the repo I am not going to go through step by ste
 
 Azure sets the default traffic on `eth0` device; unless you want to mess about with resetting all the routes, I suggest you ensure the public NIC is the first device. You can see in the Terraform code that the way to specify this is to ensure that the NIC is the first in the list of connected devices.
 
-```text
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine
 
-network_interface_ids - (Required). A list of Network Interface ID's which should be attached to this Virtual Machine. The first Network Interface ID in this list will be the Primary Network Interface on the Virtual Machine.
-```
+*"network_interface_ids - (Required). A list of Network Interface ID's which should be attached to this Virtual Machine. The first Network Interface ID in this list will be the Primary Network Interface on the Virtual Machine."*
 
 ## Private NIC must have 'IP forwarding settings' enabled
 
