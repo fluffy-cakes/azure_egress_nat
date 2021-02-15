@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # enable ip forwarding
-sudo sed -i s/#net\.ipv4\.ip_forward=1/net\.ipv4\.ip_forward=1/g /etc/sysctl.conf
+sudo sed -i 's/#net\.ipv4\.ip_forward=1/net\.ipv4\.ip_forward=1/g' /etc/sysctl.conf
 
 # enable the routing
 sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
